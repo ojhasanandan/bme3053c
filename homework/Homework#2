@@ -1,0 +1,11 @@
+bp_readings = [120, 137, 151, 123, 162, 173, 127, 154]
+
+def norm(readings):
+  min = min(readings);
+  max = max(readings);
+  for i in range(len(readings)):
+    norm_readings[i] = readings-min / (max-min);
+  return norm_readings
+
+norm_readings = norm(bp_readings);
+print(norm_readings)
